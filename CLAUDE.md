@@ -63,6 +63,15 @@ competenza; ognuno scrive solo la propria parte del PRD e segnala le dipendenze 
 | `dimensionamento` | carico, concorrenza, costi mensili, scalabilità, deployment | Dimensionamento, Deployment |
 | `ux-ui` | layout per area, navigazione, palette, accessibilità, responsive | Interfaccia |
 | `revisore-prd` | a fine di ogni sezione e prima di ogni consegna | nessuna (solo verifica) |
+| `frontend-dev` | implementare il frontend dalle specifiche di `ux-ui`, usando la libreria componenti | codice in `frontend/` |
+
+## Libreria componenti
+
+Repo React di componenti generici dell'utente, base riutilizzabile per il frontend.
+`frontend-dev` la clona qui se non c'è e non la modifica mai.
+
+- **URL**: DA DEFINIRE
+- **Percorso locale**: `../<nome-repo>` (cartella accanto a questa, non dentro)
 
 ## Protocollo di collaborazione
 
@@ -91,7 +100,8 @@ Il supervisore, dopo ogni giro:
 
 Ordine consigliato: `analista-requisiti` → `data-modeler` → `architetto` → `api-designer` →
 `security-privacy` → `ux-ui` → `dimensionamento` → `revisore-prd`. Le sezioni che non
-dipendono l'una dall'altra si possono scrivere in parallelo.
+dipendono l'una dall'altra si possono scrivere in parallelo. `frontend-dev` entra dopo, quando
+la sezione Interfaccia e le API della parte da implementare sono scritte e revisionate.
 
 ## Git
 

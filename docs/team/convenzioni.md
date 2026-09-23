@@ -11,44 +11,49 @@ la sposta qui.
 - Si scrive al presente ("il Worker verifica il token"), non al futuro.
 - I nomi tecnici restano in inglese quando è convenzione (token, endpoint, soft-delete, DTO).
 - Tabelle per confronti ed elenchi strutturati; diagrammi in **Mermaid**.
-- Nessuna sezione ripete contenuti di un'altra: si rimanda con un link (`vedi §4.2`).
+- Nessuna sezione ripete contenuti di un'altra: si rimanda per titolo o per ID.
 
 ## Modello di sezione
 
-Ogni sezione principale del PRD segue questa struttura (le parti che non servono si omettono):
+Il PRD segue **il template del corso** (titoli, ordine e tabelle come nello scheletro di
+`PRD.MD`). Regole:
 
-```markdown
-## N. Titolo
-
-**Responsabile**: <agente> · **Dipende da**: §x, §y
-
-### N.1 Obiettivo
-Cosa copre la sezione, in 2-3 righe.
-
-### N.2 Contenuto
-...
-
-### N.3 Alternative considerate
-| Opzione | Pro | Contro | Esito |
-
-### N.4 Assunzioni
-Rimandi agli ID del registro assunzioni (A-xx), senza riscriverle.
-```
+- Non si rinominano, riordinano o saltano i titoli del template; si possono aggiungere
+  sottosezioni `####` dentro la propria parte.
+- I callout 💡 del template non vanno nel PRD. Nessuna riga "Responsabile" nel testo.
+- Ogni agente sostituisce **solo** i blocchi `<!-- TODO: nome-agente ... -->` a lui assegnati.
+- **La prima parte non contiene scelte tecniche**: niente nomi di framework, DB, cloud,
+  endpoint o tabelle. Si parla di cosa fa il sistema, non di come.
+- Nella seconda parte ogni scelta tecnica ha almeno un'alternativa scartata e il motivo.
+- Rimandi: per titolo di sezione (`vedi «Le API»`) o per ID.
+- Lunghezza totale obiettivo 15-25 pagine: decidere, non descrivere.
+- Un punto non deciso si scrive come assunzione `ASS-NN` con "Da validare" e un default
+  proposto, mai come decisione presa. Dati che solo il team può fornire (nomi, interviste,
+  date) restano come segnaposto `[DA COMPILARE: ...]`, mai inventati.
 
 ## Identificatori
 
 | Cosa | Formato | Esempio |
 |---|---|---|
-| User story | `RUOLO-NN` | `DOC-02` |
+| User story della traccia | `RUOLO-NN` | `DOC-02` |
 | Criterio di accettazione | `RUOLO-NN · AC-NN` | `DOC-02 · AC-01` |
-| Nuove user story (v1) | `ORA-NN`, `COM-NN`, `NOT-NN`, `MSG-NN` | `MSG-01` |
-| Assunzione | `A-NN` | `A-07` |
-| Richiesta tra agenti | `R-NN` | `R-03` |
+| Nuove user story (v1) | `ORA-NN`, `COM-NN`, `NOT-NN`, `MSG-NN`, `AUT-NN` (accesso) | `MSG-01` |
+| Requisito funzionale deciso dal team | `FR-AREA-NN` (AREA: DIR, DOC, STU, VOT, VER, AUT, EXT, …) | `FR-VOT-01` |
+| Requisito non funzionale | `NFR-NN` | `NFR-04` |
+| Archetipo | `ARC-NNN` | `ARC-002` |
+| Assunzione | `ASS-NN` | `ASS-07` |
+| Vincolo | `VIN-NN` | `VIN-01` |
+| Dipendenza esterna | `DIP-NN` | `DIP-01` |
 | Rischio | `RIS-NN` | `RIS-01` |
+| Richiesta tra agenti (solo lavagna) | `R-NN` | `R-03` |
 
-Il registro delle assunzioni sta **una sola volta** nel PRD, nella sezione "Assunzioni"; le
-altre sezioni lo citano per ID. Chi introduce un'assunzione la aggiunge lì con il numero
-successivo libero.
+Assunzioni, vincoli e dipendenze stanno **una sola volta** nel PRD, nella sezione
+«Assunzioni, vincoli e dipendenze»; le altre sezioni li citano per ID. Chi ne introduce uno
+nuovo lo aggiunge lì con il numero successivo libero. Numerazione riservata per evitare
+collisioni tra agenti in parallelo: analista-requisiti ASS-01..19, data-modeler ASS-20..29,
+architetto ASS-30..39, api-designer ASS-40..49, security-privacy ASS-50..59,
+dimensionamento ASS-60..69 (stesse fasce per VIN e DIP; NFR-01..08 del template, poi
+analista NFR-09..19, altri agenti NFR-20+ con richiesta in lavagna).
 
 ## Glossario (nomi canonici)
 

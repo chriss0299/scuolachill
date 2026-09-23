@@ -13,7 +13,7 @@ dimensionamento sono scelte del team e vanno motivate confrontando le alternativ
 |---|---|
 | Board Miro con i flussi | fatta (Direttore) |
 | Decisioni di stack, prodotto, scope, palette | prese, vedi `docs/decisioni.md` |
-| PRD | da scrivere |
+| PRD | in stesura sul template del corso (23/09/2026) |
 | Codice | non iniziato |
 
 ## Dove sta cosa

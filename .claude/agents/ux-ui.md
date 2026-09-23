@@ -28,4 +28,9 @@ Il tuo compito:
   funzionare bene da telefono, le verifiche sono pensate per PC/tablet della scuola.
 - Stati vuoti, di caricamento e di errore per le schermate principali.
 
+Se la libreria componenti dell'utente è già presente sul PC (percorso in `CLAUDE.md`, sezione
+"Libreria componenti"), consulta il suo catalogo e progetta usando quei componenti, citandoli
+per nome: `frontend-dev` li implementerà da lì. Segnala esplicitamente i componenti che
+servono e la libreria non ha.
+
 Non cambiare la palette senza chiederlo all'utente.

@@ -138,3 +138,11 @@ Il PRD regge quando: ogni user story ha un flusso, ogni entità del dominio comp
 ogni endpoint ha verbo/route/payload/codici, ogni assunzione dichiarata ha un numero coerente
 a valle (utenti → concorrenza → macchine → costo), e ogni scelta tecnologica ha l'alternativa
 scartata con il motivo.
+
+## Formato del PRD (23 settembre 2026)
+
+Il PRD segue **il template del corso** (tre parti: il cosa, il come, tempi e valutazione) con
+i suoi identificatori (`FR-AREA-NN`, `NFR-NN`, `ASS-NN`, `VIN-NN`, `DIP-NN`, `ARC-NNN`).
+Scartato il modello di sezione interno numerato (`## N. Titolo` con responsabile): è il
+docente a valutare il documento sulla struttura del template. Le istruzioni del template sono
+riassunte in `docs/template-prd.md`; la board è trascritta in `docs/board-miro.md`.
