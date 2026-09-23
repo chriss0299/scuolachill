@@ -20,6 +20,8 @@ dimensionamento sono scelte del team e vanno motivate confrontando le alternativ
 
 - `docs/decisioni.md` — tutte le decisioni prese, con le alternative scartate e
   l'elenco di cosa manca ancora. **E il file da leggere per ripartire.**
+- `CLAUDE.md` e `.claude/agents/` — supervisore e team di agenti che scrivono il PRD.
+- `docs/team/` — convenzioni comuni e lavagna di coordinamento del team.
 - Board Miro: https://miro.com/app/board/uXjVHlP3Rww=/
   Cinque frame con i flussi del Direttore, piu quattro schede con le decisioni.
 
