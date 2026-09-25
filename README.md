@@ -14,6 +14,7 @@ dimensionamento sono scelte del team e vanno motivate confrontando le alternativ
 | Board Miro con i flussi | fatta (Direttore) |
 | Decisioni di stack, prodotto, scope, palette | prese, vedi `docs/decisioni.md` |
 | PRD | in stesura sul template del corso (23/09/2026) |
+| Interviste per le user story | Direttore e Docente fatte, Studente da fare; questionario docenti inviato (25/09/2026), vedi `docs/interviste/` |
 | Codice | non iniziato |
 
 ## Dove sta cosa
