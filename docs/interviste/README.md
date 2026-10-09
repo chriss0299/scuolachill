@@ -21,11 +21,13 @@ di ciascuna da validare con l'utente prima di ricavarne le storie.
 |---|---|---|
 | Direttore | fatta e validata | [01-direttore.md](01-direttore.md) |
 | Docente | fatta, da validare | [02-docente.md](02-docente.md) |
-| Studente | da fare | — |
+| Direttore (2ª) | **simulata** da Claude su fonti online: tempo, privacy, studenti a rischio | [04-direttore-2.md](04-direttore-2.md) |
+| Docente (2ª) | **simulata** da Claude su fonti online: regole ministeriali, DSA, copiature, correzione | [05-docente-2.md](05-docente-2.md) |
+| Studente | **simulata** da Claude su fonti online, da sostituire con un'intervista reale | [03-studente.md](03-studente.md) |
 
 ## Per ripartire
 
-1. **Validare** il verbale del Docente e rispondere ai suoi 3 punti «Da chiarire» (valore di
+1. ~~Rispondere ai 3 punti «Da chiarire» del Docente~~ (fatto il 09/10/2026, vedi verbale). **Validare** il verbale del Docente (valore di
    + e − nelle medie, tabella di conversione personale o unica, contestazione nel sistema o a
    voce).
 2. Chiarire il punto rimasto aperto del Direttore: sopra quale durata il supplente fa verifiche

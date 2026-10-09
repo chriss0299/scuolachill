@@ -13,7 +13,7 @@ dimensionamento sono scelte del team e vanno motivate confrontando le alternativ
 |---|---|
 | Board Miro con i flussi | fatta (Direttore) |
 | Decisioni di stack, prodotto, scope, palette | prese, vedi `docs/decisioni.md` |
-| PRD | in stesura sul template del corso (23/09/2026) |
+| PRD | nelle 25 pagine del template, senza codice (v1.2, 09/10/2026); consegna il 09/10/2026; manca l'intervista reale allo studente |
 | Interviste per le user story | Direttore e Docente fatte, Studente da fare; questionario docenti inviato (25/09/2026), vedi `docs/interviste/` |
 | Codice | non iniziato |
 
@@ -22,6 +22,7 @@ dimensionamento sono scelte del team e vanno motivate confrontando le alternativ
 - `docs/decisioni.md` — tutte le decisioni prese, con le alternative scartate e
   l'elenco di cosa manca ancora. **E il file da leggere per ripartire.**
 - `CLAUDE.md` e `.claude/agents/` — supervisore e team di agenti che scrivono il PRD.
+- `docs/user-story/` — una scheda per ogni user story (il PRD ne riporta tre).
 - `docs/team/` — convenzioni comuni e lavagna di coordinamento del team.
 - Board Miro: https://miro.com/app/board/uXjVHlP3Rww=/
   Cinque frame con i flussi del Direttore, piu quattro schede con le decisioni.

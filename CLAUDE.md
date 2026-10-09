@@ -16,7 +16,7 @@ attuale è il **PRD** (`PRD.MD`), non il codice. Si scrive in **italiano**.
 - Ogni scelta tecnologica ha **almeno un'alternativa scartata con il motivo**.
 - Ogni assunzione è scritta esplicitamente ed è **numericamente coerente a valle**
   (utenti → concorrenza → risorse → costo).
-- Ogni user story (DIR-01..04, DOC-01..03, STU-01..03 + orario, compiti, note, messaggi) ha un
+- Ogni user story (DIR-01..04, DOC-01..03, STU-01..03 + orario, compiti, note) ha un
   flusso e criteri di accettazione.
 - Ogni entità del dominio compare nell'ER; ogni endpoint ha verbo, route, payload, codici HTTP.
 - Regola architetturale portante: **ogni operazione passa dal Worker**, il browser non parla

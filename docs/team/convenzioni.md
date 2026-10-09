@@ -21,6 +21,12 @@ Il PRD segue **il template del corso** (titoli, ordine e tabelle come nello sche
 - Non si rinominano, riordinano o saltano i titoli del template; si possono aggiungere
   sottosezioni `####` dentro la propria parte.
 - I callout 💡 del template non vanno nel PRD. Nessuna riga "Responsabile" nel testo.
+- **User story**: una scheda per storia in `docs/user-story/`; il PRD ne riporta per esteso solo
+  DIR-03, DOC-02 e STU-02. Si aggiorna prima la scheda, poi il PRD.
+- **Niente codice nel PRD**: niente JSON, nomi di file, funzioni, tabelle, colonne o comandi in
+  formato codice. Le route restano come percorsi in testo semplice (il template chiede la colonna Route); i
+  payload si scrivono a parole. Unica eccezione: i diagrammi
+  Mermaid.
 - Ogni agente sostituisce **solo** i blocchi `<!-- TODO: nome-agente ... -->` a lui assegnati.
 - **La prima parte non contiene scelte tecniche**: niente nomi di framework, DB, cloud,
   endpoint o tabelle. Si parla di cosa fa il sistema, non di come.
@@ -47,8 +53,11 @@ Il PRD segue **il template del corso** (titoli, ordine e tabelle come nello sche
 | Rischio | `RIS-NN` | `RIS-01` |
 | Richiesta tra agenti (solo lavagna) | `R-NN` | `R-03` |
 
-Assunzioni, vincoli e dipendenze stanno **una sola volta** nel PRD, nella sezione
-«Assunzioni, vincoli e dipendenze»; le altre sezioni li citano per ID. Chi ne introduce uno
+Assunzioni, vincoli e dipendenze stanno **una sola volta** nel PRD: quelli di scuola e
+prodotto nella sezione «Assunzioni, vincoli e dipendenze» (prima parte), quelli che nominano
+scelte tecniche (fornitori, piani, tabelle, configurazione) nella tabella «Assunzioni, vincoli e
+dipendenze tecniche» in fondo a «Scelte tecnologiche», perché la prima parte non contiene scelte
+tecniche. Le altre sezioni li citano per ID. Chi ne introduce uno
 nuovo lo aggiunge lì con il numero successivo libero. Numerazione riservata per evitare
 collisioni tra agenti in parallelo: analista-requisiti ASS-01..19, data-modeler ASS-20..29,
 architetto ASS-30..39, api-designer ASS-40..49, security-privacy ASS-50..59,
@@ -69,12 +78,13 @@ Usare **sempre** questi nomi, nel testo, nell'ER e nelle API.
 | AnnoScolastico | periodo scolastico di riferimento | `anni_scolastici` | `/v1/anni-scolastici` |
 | Materiale | file o contenuto didattico caricato dal docente | `materiali` | `/v1/materiali` |
 | Verifica | prova con domande, svolta online | `verifiche` | `/v1/verifiche` |
-| Svolgimento | consegna di una verifica da parte di uno studente | `svolgimenti` | `/v1/verifiche/{id}/svolgimenti` |
-| Voto | valutazione 1-10 con mezzi voti, stato bozza/pubblicato | `voti` | `/v1/voti` |
+| Svolgimento | tentativo di una verifica da parte di uno studente, dall'avvio alla consegna | `svolgimenti` | `/v1/verifiche/{id}/svolgimenti` |
+| Voto | valutazione 1-10 con mezzi voti e segni + e −, stato bozza/pubblicato | `voti` | `/v1/voti` |
+| TabellaConversione | tabella personale del docente da percentuale di punteggio a voto | `tabelle_conversione` | `/v1/tabelle-conversione` |
 | Orario | griglia settimanale delle lezioni | `orari` | `/v1/orari` |
 | Compito | compito per casa | `compiti` | `/v1/compiti` |
 | Nota | nota disciplinare | `note_disciplinari` | `/v1/note` |
-| Messaggio | messaggio studente ↔ docente | `messaggi` | `/v1/messaggi` |
+| Messaggio | messaggio studente ↔ docente (**fuori dalla v1**, evoluzione futura) | `messaggi` | `/v1/messaggi` |
 
 Nuovi termini: proposti in lavagna, poi aggiunti qui.
 

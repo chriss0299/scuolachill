@@ -96,3 +96,9 @@
 - La tabella di conversione: **ognuno la sua**, o una sola per la scuola decisa dal Direttore?
 - La contestazione: avviene **in classe a voce** (e nel sistema il docente corregge solo il
   voto), oppure lo studente deve poterla **scrivere nel sistema**?
+
+## Risposte ai punti da chiarire (09/10/2026)
+
+- **+ e −**: si adotta l'uso del docente; nelle medie valgono ±0,25, da confermare (ASS-06).
+- **Tabella di conversione**: una per docente, che la crea nel sistema o la importa (FR-VER-05).
+- **Contestazione**: per ora a voce in classe, fuori dalla v1.
